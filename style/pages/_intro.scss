@@ -5,16 +5,16 @@ body.intro {
     width: 100%;
     padding: 15px;
     padding-top: 2.5rem;
-
-    &.intro {
+    &.full-wrapper {
         width: 100%;
         height: 100%;
-        text-align: center;
         display: flex;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
 
     .intro-img {
         width: 80%;

@@ -1,0 +1,76 @@
+  
+  @keyframes internal {
+    0% {
+      stroke-dashoffset: 187;
+    }
+    25% {
+      stroke-dashoffset: 80;
+    }
+    100% {
+      stroke-dashoffset: 187;
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes external {
+    0% {
+      stroke-dashoffset: 312;
+      transform: rotate(70deg);
+    }
+    60% {
+      stroke-dashoffset: -312;
+    }
+    100% {
+      stroke-dashoffset: -312;
+      transform: rotate(450deg);
+    }
+  }
+
+
+.loader {
+    width: 14rem;
+    height: 14rem;
+    transform: rotate(-180deg);
+    stroke-linecap: round;
+    stroke-width: 1.5;
+    fill: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7rem;
+    margin-top: -7rem;
+
+    .external-circle {
+      stroke: $green;
+      stroke-dashoffset: 0;
+      transform-origin: center;
+      stroke-dasharray: 312;
+      animation: external 2s linear infinite;
+      opacity: .9;
+    }
+  }
+
+  .loading-circle__wrap {
+      text-align: center;
+
+      & > h3 {
+          color: $green;
+          font-size: 1.35rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+      }
+  }
+  .loading-circle {
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.65rem;
+      font-weight: bold;
+      background-color: #5dc9aa;
+      text-align: center;
+      line-height: 10rem;
+      margin-left: auto;
+      margin-right: auto;
+  }
