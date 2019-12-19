@@ -44,6 +44,7 @@ a, a:focus, a:hover {
 .wrapper .intro-img {
   width: 80%;
   margin-bottom: 2.25rem;
+  margin-top: 1.65rem;
 }
 
 .wrapper .intro-heading > small {
@@ -71,7 +72,7 @@ a, a:focus, a:hover {
 }
 
 .wrapper .intro-start__btn {
-  padding: 0.5rem 2rem 0.75rem;
+  padding: 0.75rem 2rem;
   background-color: #ffffe2;
   color: #49c6b9;
   font-size: 1.45rem;
