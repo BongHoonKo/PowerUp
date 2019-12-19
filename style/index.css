@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -17,14 +22,40 @@ a, a:focus, a:hover {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  color: white;
+}
+
+.btn.big {
+  padding: 0.75rem 2rem;
+  border-radius: 16px;
+  font-size: 1.45rem;
+}
+
+.btn.normal {
+  border-radius: 300rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+}
+
+.btn.main-btn {
+  color: #49c6b9;
+  background-color: #ffffe2;
+}
+
+body.intro {
+  background: linear-gradient(45deg, #1fc3de, #5dc9aa);
+}
+
 .wrapper {
   width: 100%;
+  padding: 15px;
 }
 
 .wrapper.intro {
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #1fc3de, #5dc9aa);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +74,7 @@ a, a:focus, a:hover {
 
 .wrapper .intro-img {
   width: 80%;
+  max-width: 18rem;
   margin-bottom: 2.25rem;
   margin-top: 1.65rem;
 }
@@ -71,10 +103,104 @@ a, a:focus, a:hover {
   line-height: 1.4;
 }
 
-.wrapper .intro-start__btn {
-  padding: 0.75rem 2rem;
-  background-color: #ffffe2;
-  color: #49c6b9;
-  font-size: 1.45rem;
-  border-radius: 16px;
+.wrapper .tip-heading {
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 3rem;
+}
+
+.wrapper .tip-heading > p {
+  margin-bottom: 0.35rem;
+}
+
+.wrapper .tip-heading > p.right {
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 0.35rem;
+}
+
+.wrapper .tip-heading .tip-heading__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .tip-heading .tip-heading__box p {
+  font-size: 1.725rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.wrapper .tip-heading .tip-heading__box p.tip {
+  font-size: 3.65rem;
+  margin-top: auto;
+  margin-left: auto;
+  line-height: 1.15;
+}
+
+.wrapper .tip-contents__container {
+  width: 100%;
+}
+
+.wrapper .tip-contents__container .tip-contents {
+  width: 50%;
+  float: left;
+  padding-right: 2.5px;
+}
+
+.wrapper .tip-contents__container .tip-contents .tip-contents__title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #00849d;
+  line-height: 1.35;
+}
+
+.wrapper .tip-contents__container .tip-contents .tip-contents__title > strong {
+  color: #00a99d;
+}
+
+.wrapper .tip-contents__container .tip-contents .btn.normal {
+  background-color: #00a99d;
+}
+
+.wrapper .tip-contents__container .tip-contents:last-of-type {
+  padding-right: 0;
+  padding-left: 2.5px;
+}
+
+.wrapper .tip-contents__container .tip-contents:last-of-type .tip-contents__title {
+  color: #0071bc;
+}
+
+.wrapper .tip-contents__container .tip-contents:last-of-type .tip-contents__title > strong {
+  color: #29abe2;
+}
+
+.wrapper .tip-contents__container .tip-contents:last-of-type .btn.normal {
+  background-color: #29abe2;
+}
+
+.wrapper .tip-contents__container .tip-contents__box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem 0.25rem;
+}
+
+.wrapper .tip-contents__container .tip-contents__box > img {
+  width: 4.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper .tip-contents__container .tip-contents__box > .tip-contents__title {
+  margin-bottom: 0.65rem;
+}
+
+.wrapper .tip-contents__container .tip-contents__box > p {
+  color: #808080;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }

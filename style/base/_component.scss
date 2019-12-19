@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    color: white;
+
+    &.big {
+        padding: 0.75rem 2rem;
+        border-radius: 16px;
+        font-size: 1.45rem;
+    }
+
+    &.normal {
+        border-radius: 300rem;
+        padding:0.5rem 2.5rem;
+        font-size: 1rem;
+    }
+
+    &.main-btn {
+        color: $main-color;
+        background-color: $white;
+    }
+}

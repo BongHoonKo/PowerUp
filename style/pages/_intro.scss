@@ -1,10 +1,13 @@
+body.intro {
+    background: linear-gradient(45deg,#1fc3de,#5dc9aa);
+}
 .wrapper {
     width: 100%;
+    padding: 15px;
 
     &.intro {
         width: 100%;
         height: 100%;
-        background: linear-gradient(45deg,#1fc3de,#5dc9aa);
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -14,6 +17,7 @@
 
     .intro-img {
         width: 80%;
+        max-width: 18rem;
         margin-bottom: 2.25rem;
         margin-top: 1.65rem;
     }
@@ -43,11 +47,91 @@
         margin-bottom: 1.5rem;
         line-height: 1.4;
     }
-    .intro-start__btn {
-        padding: 0.75rem 2rem;
-        background-color: $white;
-        color: $main-color;
-        font-size: 1.45rem;
-        border-radius: 16px;
+
+    .tip-heading {
+        color: white;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 3rem;
+
+        & > p {
+            margin-bottom: 0.35rem;
+            &.right {
+                text-align: right;
+                margin-bottom: 0;
+                margin-top: 0.35rem;
+            }
+        }
+
+        .tip-heading__box {
+            display: flex;
+            p {
+                font-size: 1.725rem;
+                font-weight: bold;
+                line-height: 1.25;
+
+                &.tip {
+                    font-size: 3.65rem;
+                    margin-top: auto;
+                    margin-left:auto;
+                    line-height: 1.15;
+                }
+            }
+        }
+    }
+
+    .tip-contents__container {
+        width: 100%;
+        .tip-contents {
+            width: 50%;
+            float: left;
+            padding-right: 2.5px;
+            .tip-contents__title {
+                font-size: 0.95rem;
+                font-weight: bold;
+                color: $dark-green;
+                line-height: 1.35;
+                & > strong {
+                    color: $green;
+                }
+            }
+            .btn.normal {
+                background-color: $green;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+                padding-left: 2.5px;
+                .tip-contents__title {
+                    color: $dark-blue;;
+                    & > strong {
+                        color: $sky-blue;
+                    }
+                }
+                .btn.normal {
+                    background-color: $sky-blue;
+                }
+            }
+        }
+        .tip-contents__box {
+            background-color: white;
+            border-radius: 20px;
+            padding: 1rem 0.25rem;
+            & > img {
+                width: 4.25rem;
+                margin-bottom: 0.5rem;
+            }
+            & > .tip-contents__title {
+                margin-bottom: 0.65rem;
+            }
+            & > p {
+                color: $dark-grey;
+                font-size: 0.7rem;
+                line-height: 1.5;
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 }
