@@ -74,8 +74,11 @@ body.intro {
 
                 &.tip {
                     font-size: 3.65rem;
-                    margin-top: auto;
-                    margin-left:auto;
+                    margin: {
+                        top: auto;
+                        left: auto;
+                        right: 0.25rem;
+                    }
                     line-height: 1.15;
                 }
             }
