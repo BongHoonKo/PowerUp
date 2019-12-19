@@ -4,4 +4,9 @@
 @import './base/reset';
 @import './base/component';
 
+@import './layout/header';
+@import './layout/container';
+@import './layout/footer';
+
 @import './pages/intro';
+@import './pages/consultingForm';

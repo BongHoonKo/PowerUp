@@ -1,0 +1,137 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title></title>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./style/reset.css"/>
+        <link rel="stylesheet" href="./style/index.css"/>
+
+        <!-- Js -->
+        <script src="./js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper consulting-form__wrapper">
+            <header class="header">
+                <button class="back-btn" aria-label="뒤로가기 버튼"></button>
+                <h2>KT 파워업 컨설팅</h2>
+            </header>
+            <div class="container">
+                <h3 class="consulting-title green">전기 요금은 어떻게 내고 계세요?</h3>
+                <section class="consulting-contents">
+                    <h4>1. 전기 요금을 먼저 입력해주세요.</h4>
+                    <form class="consulting-form">
+                        <div class="consulting-input__wrap">
+                            <label for="cType">계약종별 선택</label>
+                            <div class="input-wrap">
+                                <input id="cType" type="text" placeholder="일반용(갑) 저압"/>
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cCurrent">현 계약전력</label>
+                            <div class="input-wrap">
+                                <input id="cCurrent" type="number"/> kw
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cAnnual">최근 1년 최대 사용량</label>
+                            <div class="input-wrap">
+                                <input id="cAnnual" type="number"/> kw
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cMax">최대수요전력</label>
+                            <div class="input-wrap">
+                                <input id="cMax" type="number"/> kw
+                                <p class="input-tooltip">현 계약전력이 20kw 이상일때만 입력</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="consulting-contents">
+                    <h4>2. 통신 요금은 어떻게 내고 있으세요?</h4>
+                    <form class="consulting-form">
+                        <div class="consulting-input__wrap">
+                            <label for="cInternet">인터넷 요금</label>
+                            <div class="input-wrap">
+                                <input id="cInternet" type="number"/> 원
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cTV">TV 요금</label>
+                            <div class="input-wrap">
+                                <input id="cTV" type="number"/> 원
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cPhone">일반전화 요금</label>
+                            <div class="input-wrap">
+                                <input id="cPhone" type="number"/> 원
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cCCTV">CCTV 요금</label>
+                            <div class="input-wrap">
+                                <input id="cCCTV" type="number"/> 원
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <br/>
+                <h3 class="consulting-title green">고객님께 이렇게 추천드려요!</h3>
+
+                <section class="consulting-contents">
+                    <h4>3. 추천하는 계약전력 요금을 입력해주세요.</h4>
+                    <form class="consulting-form recommended-form">
+                        <div class="consulting-input__wrap">
+                            <label for="cRecommended">추천 계약전력</label>
+                            <div class="input-wrap">
+                                <input id="cRecommended" type="number"/> kw
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="consulting-contents recommended-consulting">
+                    <h4>4. 통신 요금은 이걸 추천해드려요.</h4>
+                    <form class="consulting-form">
+                        <div class="consulting-input__wrap">
+                            <label for="cInternet">인터넷</label>
+                            <div class="input-wrap">
+                                <input id="cInternet" type="number" placeholder="기가인터넷"/>
+                                X <input class="num-input"/> 회선
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cTV">TV</label>
+                            <div class="input-wrap">
+                                <input id="cTV" type="number" placeholder="OTV 슬림"/>
+                                X <input class="num-input"/> 회선
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cPhone">일반전화</label>
+                            <div class="input-wrap">
+                                <input id="cPhone" type="number"/>
+                                X <input class="num-input"/> 회선
+                            </div>
+                        </div>
+                        <div class="consulting-input__wrap">
+                            <label for="cCCTV">CCTV</label>
+                            <div class="input-wrap">
+                                <input id="cCCTV" type="number" placeholder="I-slim"/>
+                                X <input class="num-input"/> 회선
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <footer class="footer">
+                <a href="#" class="btn normal green">확인해보기</a>
+            </footer>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

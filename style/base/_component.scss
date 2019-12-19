@@ -18,4 +18,10 @@
         color: $main-color;
         background-color: $white;
     }
+
+    &.green {
+        background-color: $green;
+        color: white;
+        box-shadow: 7px 7px 20px rgba(0,169,157,0.65);
+    }
 }
