@@ -70,7 +70,7 @@ a, a:focus, a:hover {
   left: 0;
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url("../../images/icon-back.png");
+  background-image: url("./../../images/icon-back.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 0.75rem;
@@ -314,7 +314,7 @@ body.intro {
 }
 
 .consulting-contents .input-wrap .input-tooltip {
-  font-size: 0.35rem;
+  font-size: 0.6rem;
   margin-top: 0.25rem;
 }
 
@@ -360,6 +360,7 @@ body.intro {
   border-bottom: 1px solid #808080;
   border-radius: 0;
   padding: 0;
+  text-align: center;
 }
 
 .recommended-consulting .consulting-form .consulting-input__wrap label {
