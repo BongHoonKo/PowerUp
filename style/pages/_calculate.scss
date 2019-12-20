@@ -1,14 +1,10 @@
 @keyframes external {
-    0% {
+    from {
       stroke-dashoffset: 312;
-      //transform: rotate(70deg);
     }
-    /*60% {
+    to {
       stroke-dashoffset: -312;
-    }*/
-    100% {
-      stroke-dashoffset: -312;
-      //transform: rotate(450deg);
+      //transform: rotate(70deg);
     }
   }
 
@@ -29,10 +25,10 @@
 
     .external-circle {
       stroke: $green;
-      stroke-dashoffset: 0;
       transform-origin: center;
+      stroke-dashoffset: 312;
       stroke-dasharray: 312;
-      animation: external 2s linear infinite;
+      animation: external 2s linear alternate infinite;
       opacity: .9;
     }
   }

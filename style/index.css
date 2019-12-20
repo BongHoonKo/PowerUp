@@ -379,25 +379,19 @@ body.intro {
 }
 
 @-webkit-keyframes external {
-  0% {
+  from {
     stroke-dashoffset: 312;
   }
-  /*60% {
-      stroke-dashoffset: -312;
-    }*/
-  100% {
+  to {
     stroke-dashoffset: -312;
   }
 }
 
 @keyframes external {
-  0% {
+  from {
     stroke-dashoffset: 312;
   }
-  /*60% {
-      stroke-dashoffset: -312;
-    }*/
-  100% {
+  to {
     stroke-dashoffset: -312;
   }
 }
@@ -421,12 +415,12 @@ body.intro {
 
 .loader .external-circle {
   stroke: #00a99d;
-  stroke-dashoffset: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
+  stroke-dashoffset: 312;
   stroke-dasharray: 312;
-  -webkit-animation: external 2s linear infinite;
-          animation: external 2s linear infinite;
+  -webkit-animation: external 2s linear alternate infinite;
+          animation: external 2s linear alternate infinite;
   opacity: .9;
 }
 
