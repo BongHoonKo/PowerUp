@@ -1,4 +1,4 @@
-@keyframes external {
+  @keyframes external {
     0% {
       stroke-dashoffset: 312;
       transform: rotate(70deg);
@@ -7,7 +7,7 @@
       stroke-dashoffset: -312;
     }*/
     100% {
-      stroke-dashoffset: -312;
+      stroke-dashoffset: 0;
       transform: rotate(450deg);
     }
   }
@@ -29,10 +29,10 @@
 
     .external-circle {
       stroke: $green;
+      stroke-dashoffset: 0;
       transform-origin: center;
-      stroke-dashoffset: 312;
       stroke-dasharray: 312;
-      animation: external 1.5s linear infinite;
+      animation: external 1.5s linear alternate infinite;
       opacity: .9;
     }
   }
@@ -60,4 +60,43 @@
       line-height: 10rem;
       margin-left: auto;
       margin-right: auto;
+  }
+
+
+  .calculate-result__wrap {
+    .result-top {
+      font-size: 1.15rem;
+      color: #5dc9aa;
+      margin-bottom: 0.5rem;
+      strong {
+        font-size: 1.35rem;
+        color: $green;
+        text-shadow: 3px 3px 3px rgba(0, 169, 157, 0.35);
+      }
+    }
+    & > h3 {
+      color: $green;
+      font-size: 3.85rem;
+      font-weight: bold;
+      line-height: 1;
+      text-shadow: 7px 7px 5px rgba(0, 169, 157, 0.35);
+      margin-bottom: 1rem; 
+    }
+    .result-bottom {
+      font-size: 1.35rem;
+      color: #9c9898;
+      margin-bottom: 3rem;
+    }
+    .result-detail {
+      font-size: 1.35rem;
+      color: $black;
+      line-height: 1.35;
+      margin-bottom: 3.5rem;
+      span {
+        display: inline-block;
+        min-width: 2rem;
+        border-bottom:  1px solid $black;
+        text-align: center;
+      }
+    }
   }
