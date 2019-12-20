@@ -383,7 +383,7 @@ body.intro {
     stroke-dashoffset: 312;
   }
   to {
-    stroke-dashoffset: -312;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -392,7 +392,7 @@ body.intro {
     stroke-dashoffset: 312;
   }
   to {
-    stroke-dashoffset: -312;
+    stroke-dashoffset: 0;
   }
 }
 
