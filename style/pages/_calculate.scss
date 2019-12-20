@@ -1,14 +1,14 @@
 @keyframes external {
     0% {
       stroke-dashoffset: 312;
-      transform: rotate(70deg);
+      //transform: rotate(70deg);
     }
     /*60% {
       stroke-dashoffset: -312;
     }*/
     100% {
       stroke-dashoffset: -312;
-      transform: rotate(450deg);
+      //transform: rotate(450deg);
     }
   }
 

@@ -381,32 +381,24 @@ body.intro {
 @-webkit-keyframes external {
   0% {
     stroke-dashoffset: 312;
-    -webkit-transform: rotate(70deg);
-            transform: rotate(70deg);
   }
   /*60% {
       stroke-dashoffset: -312;
     }*/
   100% {
     stroke-dashoffset: -312;
-    -webkit-transform: rotate(450deg);
-            transform: rotate(450deg);
   }
 }
 
 @keyframes external {
   0% {
     stroke-dashoffset: 312;
-    -webkit-transform: rotate(70deg);
-            transform: rotate(70deg);
   }
   /*60% {
       stroke-dashoffset: -312;
     }*/
   100% {
     stroke-dashoffset: -312;
-    -webkit-transform: rotate(450deg);
-            transform: rotate(450deg);
   }
 }
 
