@@ -1,4 +1,4 @@
-  @keyframes external {
+  @keyframes external1 {
     0% {
       stroke-dashoffset: 312;
       transform: rotate(70deg);
@@ -8,6 +8,19 @@
     }*/
     100% {
       stroke-dashoffset: 0;
+      transform: rotate(450deg);
+    }
+  }
+  @keyframes external {
+    0% {
+      stroke-dashoffset: 312;
+      transform: rotate(70deg);
+    }
+    /*60% {
+      stroke-dashoffset: -312;
+    }*/
+    100% {
+      stroke-dashoffset: -312;
       transform: rotate(450deg);
     }
   }
@@ -32,7 +45,7 @@
       stroke-dashoffset: 0;
       transform-origin: center;
       stroke-dasharray: 312;
-      animation: external 1.5s linear alternate infinite;
+      animation: external 1.5s linear infinite;
       opacity: .9;
     }
   }
