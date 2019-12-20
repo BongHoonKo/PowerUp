@@ -1,10 +1,14 @@
 @keyframes external {
-    from {
+    0% {
       stroke-dashoffset: 312;
+      transform: rotate(70deg);
     }
-    to {
+    /*60% {
+      stroke-dashoffset: -312;
+    }*/
+    100% {
       stroke-dashoffset: 0;
-      //transform: rotate(70deg);
+      transform: rotate(450deg);
     }
   }
 
@@ -28,7 +32,7 @@
       transform-origin: center;
       stroke-dashoffset: 312;
       stroke-dasharray: 312;
-      animation: external 2s linear alternate infinite;
+      animation: external 1.5s linear alternate infinite;
       opacity: .9;
     }
   }
