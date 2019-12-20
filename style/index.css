@@ -388,7 +388,7 @@ body.intro {
       stroke-dashoffset: -312;
     }*/
   100% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: -312;
     -webkit-transform: rotate(450deg);
             transform: rotate(450deg);
   }
@@ -404,7 +404,7 @@ body.intro {
       stroke-dashoffset: -312;
     }*/
   100% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: -312;
     -webkit-transform: rotate(450deg);
             transform: rotate(450deg);
   }
@@ -433,8 +433,8 @@ body.intro {
           transform-origin: center;
   stroke-dashoffset: 312;
   stroke-dasharray: 312;
-  -webkit-animation: external 1.5s linear alternate infinite;
-          animation: external 1.5s linear alternate infinite;
+  -webkit-animation: external 1.5s linear infinite;
+          animation: external 1.5s linear infinite;
   opacity: .9;
 }
 

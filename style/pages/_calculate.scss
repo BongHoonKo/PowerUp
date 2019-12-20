@@ -7,7 +7,7 @@
       stroke-dashoffset: -312;
     }*/
     100% {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: -312;
       transform: rotate(450deg);
     }
   }
@@ -32,7 +32,7 @@
       transform-origin: center;
       stroke-dashoffset: 312;
       stroke-dasharray: 312;
-      animation: external 1.5s linear alternate infinite;
+      animation: external 1.5s linear infinite;
       opacity: .9;
     }
   }
