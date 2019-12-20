@@ -34,12 +34,17 @@ body.intro {
             margin-bottom: -0.55rem;
         }
         & > p {
-            color: $yellow;
+            color: $black;
             font-size: 3.5rem;
             font-weight: bold;
             line-height: 1;
             margin-bottom: 1.25rem;
-            text-shadow: 0 0 1.65rem rgba(255,255,226,0.65);
+            transition-duration: 0.3s;
+
+            &.active {
+                color: $yellow;
+                text-shadow: 0 0 1.65rem rgba(255,255,226,0.65);
+            }
         }
     }
     .intro-sub-heading {
